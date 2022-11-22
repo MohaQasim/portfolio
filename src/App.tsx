@@ -1,11 +1,12 @@
 // App.tsx
 import React from 'react'
-import MyFirstComponent from './components/myFirstComponent';
+import Home from './components/home/home';
 
 const App: React.FC = () => {
   return (
     <div>
-      <MyFirstComponent />
+      <Home/>
+  
     </div>
   )
 }
