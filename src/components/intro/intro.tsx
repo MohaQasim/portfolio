@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { /*useState*/ } from 'react'
 import styles from './intro.module.scss'
 // import Github from '../../img/github.png'
 // import LinkedIn from '../../img/linkedin.png'
