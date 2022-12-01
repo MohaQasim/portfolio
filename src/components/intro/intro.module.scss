@@ -75,4 +75,29 @@
 flex: 1;
    }
    
+
+//rigth side img 
+   .iRight{
+    flex: 1;
+    position: relative;
+   }
+
+   .iRight>*{
+    position: absolute;
+    z-index: 1;
+   }
+   .iRight>:nth-child(1){
+    transform: scale(0.69);
+    left: -15%;
+    top: -9%;
+   }
+   .iRight>:nth-child(2){
+    top: -4.6rem;
+    transform: scale(0.67);
+    left: -3rem;
+  }
+  .iRight>:nth-child(3){
+    transform: scale(1.4);
+    left: 20%;
+  }
    
