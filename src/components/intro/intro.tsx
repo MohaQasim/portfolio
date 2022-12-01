@@ -31,7 +31,7 @@ const Intro: React.FC= () => {
         asd
       </button> */}
 
-      <button className={classNames(classes.button, classes.iButton)}>
+      <button className={classNames(styles.button, styles.iButton)}>
         hire me
       </button>
     </div> 
