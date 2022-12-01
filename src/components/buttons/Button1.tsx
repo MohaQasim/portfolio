@@ -8,7 +8,7 @@ type Button1Props = {
 
 const Button1: React.FC<Button1Props> = ({ onClick, children }) => {
 
-  const handIeButtonClick = () => {}
+  //const handIeButtonClick = () => {}
 
   return (
     <button className={styles.container} onClick={onClick}>

@@ -1,8 +1,8 @@
 import React from 'react'
 import './navbar.module.scss'
 import styles from './navbar.module.scss'
-import {Link} from 'react-router-dom'
-import { isNoSubstitutionTemplateLiteral } from 'typescript'
+// import {Link} from 'react-router-dom'
+// import { isNoSubstitutionTemplateLiteral } from 'typescript'
 import Button1 from '../buttons/Button1'
 
 

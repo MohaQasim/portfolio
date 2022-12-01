@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import styles from './intro.module.scss'
-import Github from '../../img/github.png'
-import LinkedIn from '../../img/linkedin.png'
-import Instagram from '../../img/instagram.png'
-
+// import Github from '../../img/github.png'
+// import LinkedIn from '../../img/linkedin.png'
+// import Instagram from '../../img/instagram.png'
+import classNames from   'classnames'
 
 const Intro: React.FC= () => {
 
-  const [buttonDefaultStyle, setButtonDefaultStyle] = useState<boolean>(true)
+  // const [buttonDefaultStyle, setButtonDefaultStyle] = useState<boolean>(true)
 
-  const handleButtonClick = () => {
-    setButtonDefaultStyle(!buttonDefaultStyle)
+  // const handleButtonClick = () => {
+  //   setButtonDefaultStyle(!buttonDefaultStyle)
   }
 
   return (
@@ -24,13 +24,15 @@ const Intro: React.FC= () => {
             and development, producting the 
             Quality work</span>
      </div>
-        
-
-          
-    <button
+             
+    {/* <button
       className={buttonDefaultStyle ? styles.button : styles.button1}
       onClick={() => handleButtonClick()}>
         asd
+      </button> */}
+
+      <button className={classNames(classes.button, classes.iButton)}>
+        hire me
       </button>
     </div> 
 
