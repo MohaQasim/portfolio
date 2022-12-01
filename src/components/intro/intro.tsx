@@ -1,8 +1,8 @@
 import React, { /*useState*/ } from 'react'
 import styles from './intro.module.scss'
-// import Github from '../../img/github.png'
-// import LinkedIn from '../../img/linkedin.png'
-// import Instagram from '../../img/instagram.png'
+import Github from '../../img/github.png'
+ import LinkedIn from '../../img/linkedin.png'
+ import Instagram from '../../img/instagram.png'
 import classNames from   'classnames'
 
 const Intro: React.FC= () => {
@@ -31,9 +31,13 @@ const Intro: React.FC= () => {
         asd
       </button> */}
 
-      <button className={classNames(styles.button, styles.iButton)}>
-        hire me
-      </button>
+      <button className={classNames(styles.button, styles.iButton)}>  hire me</button>
+       <div className={styles.iIcons}>
+        <a href="https://github.com/"><img src={Github} alt="" /></a>
+        <a href="https://www.linkedin.com/feed/"><img src={LinkedIn} alt="" /></a>
+        <a href="https://www.instagram.com/"><img src={Instagram} alt="" /></a>
+        
+       </div>
     </div> 
 
      <div className={styles.iRight}>
