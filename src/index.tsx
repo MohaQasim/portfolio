@@ -1,6 +1,7 @@
 import React from 'react';
+import "./App.module.scss";
 import ReactDOM from 'react-dom/client';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
   HashRouter as Router,
@@ -9,8 +10,12 @@ import {
 } from "react-router-dom";
 import "./index.module.scss"
 import Cv from './components/cv/cv';
-import Navbar from './components/navbar/navbar';
+import './index.module.scss'
 import Project from './components/projects/project';
+import Navbar from './components/navbar/navbar';
+import Intro from './components/intro/intro'
+
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,9 +23,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
   <Router>
-    <Navbar />
+  <Navbar/>
     <Routes>
-      <Route path='/' element={<App />}></Route>
+      <Route path='/' element={<Intro/>}></Route>
       <Route path='CV' element={<Cv />} />
       <Route path='Projects' element={<Project />} />
     </Routes>

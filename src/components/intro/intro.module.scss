@@ -1,0 +1,65 @@
+.intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+  }
+  .button{
+    border-radius: 34px;
+    // bze: 16px;
+    padding: 10px;
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    // box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42)order: none;
+    color: white;
+   }
+
+   .button1 {
+    background: hotpink;
+   }
+
+   .iLeft{
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+   }
+   
+   .iName{
+    display: flex;
+    flex-direction: column;
+   }
+
+
+   .iName>:nth-child(1){
+    color: #242D49;
+    font-weight: bold;
+    font-size: 3rem;
+   }
+
+   .iName>:nth-child(2){
+    color: #FCA61F;
+    font-weight: bold;
+    font-size: 2rem;
+    
+  }
+
+
+  .iName>:nth-child(3){
+    font-weight: 100;
+    font-size: 20px;
+    color: #788097;
+    margin-top: 10px;
+
+  }
+  .iButton{
+    width: 6rem;
+    height: 2rem;
+    
+  }
+
+
+   .iRight{
+flex: 1;
+   }
+   
+   
