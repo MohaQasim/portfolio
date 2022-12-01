@@ -11,7 +11,7 @@ const Intro: React.FC= () => {
 
   // const handleButtonClick = () => {
   //   setButtonDefaultStyle(!buttonDefaultStyle)
-  }
+  
 
   return (
   <div className ={styles.intro}>
