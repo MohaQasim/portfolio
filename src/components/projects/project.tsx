@@ -38,12 +38,12 @@ const Project: React.FC<ProjectProps> = () => {
               }}>
                 <p>{x.name}</p>
                 <p>{x.description}</p>
-                <a href= {x.html_url}></a>
+                <a href= {x.html_url} />
               </div>
             ))
           }
         </div>
-      )
+    );
 }
 
 export default Project
