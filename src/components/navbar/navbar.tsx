@@ -4,6 +4,7 @@ import styles from './navbar.module.scss'
 // import {Link} from 'react-router-dom'
 // import { isNoSubstitutionTemplateLiteral } from 'typescript'
 import Button1 from '../buttons/Button1'
+import { Link } from 'react-router-dom'
 
 
 const Navbar: React.FC = () => {
@@ -22,7 +23,7 @@ const Navbar: React.FC = () => {
         <li>AboutMe </li>
         <li>Home</li>
         <li>Cv</li>
-        <li>projects</li>  
+        <Link className = {styles.projects} to="projects"><li>Projects</li></Link>
       </ul>
       </div>
    
