@@ -9,11 +9,12 @@ import {
   Route,
 } from "react-router-dom";
 import "./index.module.scss"
-import Cv from './components/cv/cv';
 import './index.module.scss'
 import Project from './components/projects/project';
 import Navbar from './components/navbar/navbar';
 import Intro from './components/intro/intro'
+import Services from './components/Services/services'
+
 
 
 
@@ -26,9 +27,11 @@ root.render(
   <Navbar/>
     <Routes>
       <Route path='/' element={<Intro/>}></Route>
-      <Route path='CV' element={<Cv />} />
+      
+      <Route path='/' element={<Services/>} />
       <Route path='Projects' element={<Project />} />
     </Routes>
+    <Services/>
   </Router>
 </React.StrictMode>
 );

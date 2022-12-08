@@ -4,7 +4,8 @@ import styles from './navbar.module.scss'
 // import {Link} from 'react-router-dom'
 // import { isNoSubstitutionTemplateLiteral } from 'typescript'
 import Button1 from '../buttons/Button1'
-import { Link } from 'react-router-dom'
+ //import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 
 const Navbar: React.FC = () => {
@@ -20,9 +21,11 @@ const Navbar: React.FC = () => {
       <div className={styles.nRight}>
       <div className={styles.nList}>
       <ul style={{listStyleType: 'none'}}>
+        {/* <li><Link activeClass="active" to "Navbar" spy={true} smooth={true}> Home</Link></li> */}
         <li>AboutMe </li>
-        <li>Home</li>
-        <li>Cv</li>
+        {/* <li>Home</li> */}
+        {/* <li>Servces</li> */}
+        <li><Link to ="services" spy={true} smooth={true}> services</Link></li>
         <Link className = {styles.projects} to="projects"><li>Projects</li></Link>
       </ul>
       </div>
@@ -34,11 +37,10 @@ const Navbar: React.FC = () => {
           <button className={styles.button }>
             <p>Contact us</p>
             </button>
-            </div>
-        
+            </div> 
      </div>
      </div>
-    
+
   )
 }
 
