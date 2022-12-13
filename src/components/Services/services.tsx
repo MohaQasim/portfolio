@@ -30,7 +30,7 @@ const ClickCount: React.FC<ClickCountProps> = () => {
          <br />
          ispum is simpley dummy text of printing 
         </span>
-        <button className={classNames(styles.button, styles.sBbutton)}>Dawnload CV</button>
+        <button className={classNames(styles.button, styles.sButton)}>Dawnload CV</button>
         <div  className={classNames(styles.blur, styles.sBlur)} style={{background:"#ABF1FF94"}}> </div>
        </div>
         
