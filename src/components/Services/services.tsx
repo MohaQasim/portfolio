@@ -1,11 +1,13 @@
 import React, {useEffect, useState } from 'react';
-import styles from "./services.module.scss"
+import styles from "./services.module.scss";
 
-//import HeartEmoji from "../../img/heartEmoji.png"
+import HeartEmoji from "../../img/heartemoji.png"
 //import Glasses from "../../img/glasses.png"
 //import Humble from "../../humble.png"
 //import { classicNameResolver } from 'typescript';
 import classNames from 'classnames'
+import Card from '../Card/Card';
+
 
 type ClickCountProps = {
 
@@ -37,7 +39,13 @@ const ClickCount: React.FC<ClickCountProps> = () => {
         {/* {right side} */}
         <div className={styles.cards}>
 
-          i am the right side
+          <div>
+          <Card
+          emoji={HeartEmoji}
+          heading={"Design"}
+          detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+           />
+          </div>
         </div>
       </div>
 
