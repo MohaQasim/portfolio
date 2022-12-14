@@ -6,12 +6,16 @@
         margin-bottom: 8rem;
         margin-top: 9rem;
         margin-bottom: 13rem;
+         /* scroll view */
+         padding-top: 3rem;
 }
+
 // left side
 .awesome{
         display: flex;
         flex-direction: column;
         position: relative;
+        gap: 10px; //tarkista
 }
 .awesome > :nth-child(1) {
         color: var(--black);
@@ -33,7 +37,7 @@
 .Cards{
         position: relative;
 }
-.Cards>*{
+.Cards > *{
         position: absolute;
 }
 // styles Buttom
@@ -58,4 +62,13 @@
         height: 2rem;
         margin-top: 1rem;
 }
+.Cards {
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+      }
+ .Cards>* {
+        position: static;
+      }
+    
 

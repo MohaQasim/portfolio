@@ -5,6 +5,8 @@ type CardProps = {
     emoji: string;
     heading: string;
     detail: string;
+    //top:number;
+    //left:number;
 
 }
 
