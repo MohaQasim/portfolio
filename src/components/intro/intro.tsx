@@ -1,16 +1,16 @@
 import React, { /*useState*/ } from 'react'
 import styles from './intro.module.scss'
+import Vector1 from '../../img/Vector1.png'
+import Vector2 from '../../img/Vector2.png'
+import boy from '../../img/boy.png'
+import glassesimoji from '../../img/glassesimoji.png'
+//import thumbup from '../../img/thumbup.png'
+import Crown from '../../img/crown.png'
 import Github from '../../img/github.png'
- import LinkedIn from '../../img/linkedin.png'
- import Instagram from '../../img/instagram.png'
- import Vector1 from '../../img/Vector1.png'
- import Vector2 from '../../img/Vector2.png'
- import boy from '../../img/boy.png'
- //import thumbup from '../../img/thumbup.png'
- //import Crown from '../../img/crown.png'
- import glassesimoji from '../../img/glassesimoji.png'
-
+import LinkedIn from '../../img/linkedin.png'
+import Instagram from '../../img/instagram.png'
 import classNames from   'classnames'
+import FloatingDiv from '../FloatingDiv/FloatingDiv'
 
 
 const Intro: React.FC= () => {
@@ -53,6 +53,9 @@ const Intro: React.FC= () => {
       <img src={Vector2} alt="" />
       <img src={boy} alt="" />
       <img src={glassesimoji} alt="" />
+      <div>
+        <FloatingDiv image={Crown} text1="Web" text2="Developer"/>
+      </div>
      </div>
 
   </div>

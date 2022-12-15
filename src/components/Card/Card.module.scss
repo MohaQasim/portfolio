@@ -1,15 +1,15 @@
 .Card {
-    
-    height: 13rem;
     width: 10rem;
+    height: 13rem;
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: rem;
+    gap: 1rem;
     align-items: center;
     width: 8rem;
     text-align: center;
     background: rgba(255, 255, 255, 0.26);
+    //the card frame
     border: 7px solid var(--orangeCard);
     box-shadow: var(--boxShadow);
     border-radius: 20px;
@@ -21,7 +21,7 @@
   }
   .Card > img {
     transform: scale(0.6);
-    margin-bottom: -3rem;
+    margin-bottom: -2rem;
   }
   .cButton {
     background: #FFFFFF;
@@ -31,4 +31,13 @@
     padding: 10px;
     font-size: 16px;
     color: #5290FD;
+}
+.cButton:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media screen and (max-width: 480px){
+  .Card{
+    width: auto;
+  }
 }

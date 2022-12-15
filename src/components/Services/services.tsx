@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styles from "./services.module.scss";
-
 import HeartEmoji from "../../img/heartemoji.png"
 import Glasses from "../../img/glasses.png"
 import Humble from "../../img/humble.png"
@@ -8,6 +7,7 @@ import Humble from "../../img/humble.png"
 import classNames from 'classnames'
 import Card from '../Card/Card';
 // import Resume from "./resume.pdf";
+
 
 type ClickCountProps = {
 
@@ -21,7 +21,7 @@ const ClickCount: React.FC<ClickCountProps> = () => {
   }
   )
   return (
-    <div className={styles.Services}>
+    <div className={styles.Services} >
 
       {/* {left side} */}
       <div className={styles.awesome}>
@@ -32,27 +32,26 @@ const ClickCount: React.FC<ClickCountProps> = () => {
           <br />
           ispum is simpley dummy text of printing
         </span>
-        
+        <a href='Resume' download>
         <button className={classNames(styles.button, styles.sButton)}>Dawnload CV</button>
-        
-        <div className={classNames(styles.blur, styles.sBlur)} style={{ background: "#ABF1FF94" }}></div>
+        </a>
+        <div className={classNames(styles.blur, styles.sBlur1)} style={{ background: '#ABF1FF94' }}></div>
       </div>
 
       {/* {right side} */}
-      <div className={styles.cards}>
-
-        {/* the first card */}
-        <div>
+      {/* the first card */}
+      <div className={styles.Cards}
+         style={{ left: '14rem' }}>
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
             detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
           />
-        </div>
+        
 
 
         {/* the second card */}
-        <div style={{ top: "12rem", left: "-4rem" }} >
+        <div className={styles.Cards} style={{ top: '12rem', left: '-4rem' }} >
           <Card
             emoji={Glasses}
             heading={"Developer"}
@@ -62,8 +61,7 @@ const ClickCount: React.FC<ClickCountProps> = () => {
 
 
         {/* the 3d card */}
-        <div style={{ top: "19rem", left: "12rem" }} >
-
+        <div className={styles.Cards} style={{ top: '19rem', left: '12rem' }} >
           <Card
             emoji={Humble}
             heading={"UI/UX"}
@@ -72,6 +70,8 @@ const ClickCount: React.FC<ClickCountProps> = () => {
           />
 
         </div>
+        <div className={classNames(styles.blur, styles.sBlur2)}
+         style={{background: 'var(--purple)'}}></div>
       </div>
     </div>
 

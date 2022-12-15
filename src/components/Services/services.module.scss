@@ -8,6 +8,7 @@
         margin-bottom: 13rem;
          /* scroll view */
          padding-top: 3rem;
+         //background-color: #ABF1FF94;
 }
 
 // left side
@@ -37,7 +38,7 @@
 .Cards{
         position: relative;
 }
-.Cards > *{
+.Cards>*{
         position: absolute;
 }
 // styles Buttom
@@ -70,5 +71,29 @@
  .Cards>* {
         position: static;
       }
+
+// blur
+.blur {
+        position: absolute;
+        width: 22rem;
+        height: 14rem;
+        border-radius: 50%;
+        background: #edd0ff;
+        filter: blur(212px);
+        z-index: -9;
+        top: -18%;
+        left: 56%;
+        filter: blur(72px);
+      }
+.sBlur2{
+        left: 14rem;
+        top: 8rem;
+}
+.sBlur1{
+        top: 13rem;
+        left: -18rem;
+}
+
+
     
 
